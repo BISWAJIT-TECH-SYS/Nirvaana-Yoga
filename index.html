@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Nirvaana Yoga</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Nirvaana Yoga</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>
+                Find<br>
+                Your<br>
+                Inner<br>
+                Balance
+            </h1>
+
+            <p>Breathe deeply. Move mindfully. Live fully.</p>
+
+            <button>Join Today</button>
+        </div>
+
+    </section>
+
+    <section id="about" class="about">
+
+        <h2>About Nirvaana</h2>
+
+        <p>
+            Nirvaana Yoga is a peaceful space designed for adults seeking
+            balance, flexibility, mindfulness, and wellness through yoga,
+            meditation, and breathwork.
+        </p>
+
+    </section>
+
+    <section id="programs" class="programs">
+
+        <h2>Our Programs</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://srisrischoolofyoga.org/na/wp-content/uploads/2023/01/warrior-pose-three-variations-1-2-3.jpg">
+                <h3>Hatha Yoga</h3>
+                <p>Improve flexibility and posture.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://www.pranavoyage.com/wp-content/uploads/2023/10/Pranayama-featured_5001.webp">
+                <h3>Pranayama</h3>
+                <p>Master breathing techniques for calmness.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1545389336-cf090694435e">
+                <h3>Meditation</h3>
+                <p>Reduce stress and improve focus.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="ai-assistant" class="ai-section">
+
+        <h2>AI Yoga Assistant</h2>
+
+        <p>
+            Describe how you feel, and our AI-powered Yoga Assistant recommends suitable yoga poses, breathing exercises, and meditation techniques.
+        </p>
+
+        <div class="assistant-box">
+
+            <textarea id="userInput"
+                      placeholder="Example: I feel stressed and can't sleep properly"></textarea>
+
+            <button onclick="recommendYoga()">
+                Get Recommendation
+            </button>
+
+            <div id="result"></div>
+
+        </div>
+
+    </section>
+
+    <section id="gallery">
+
+        <h2>Yoga Moments</h2>
+
+        <div class="gallery">
+
+            <img src="https://images.stockcake.com/public/4/e/8/4e8d5c9f-d7ff-44c6-ba39-c20ad8180a1f_large/mountain-yoga-sunrise-stockcake.jpg">
+
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773">
+
+            <img src="https://srisrischoolofyoga.org/na/wp-content/uploads/2023/01/warrior-pose-three-variations-1-2-3.jpg">
+
+            <img src="https://www.pranavoyage.com/wp-content/uploads/2023/10/Pranayama-featured_5001.webp">
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Send</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        © 2026 Nirvaana Yoga | Breathe • Balance • Bloom
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
