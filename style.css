@@ -1,1 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+:root {
+    --sage: #7C9A6E;
+    --sand: #E8D5B7;
+    --rose: #C9847A;
+    --earth: #2D3A2E;
+    --ivory: #FAF7F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter',sans-serif;
+    background: var(--ivory);
+    color: var(--earth);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-family: 'Cormorant Garamond',serif;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--earth);
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://images.stockcake.com/public/4/e/8/4e8d5c9f-d7ff-44c6-ba39-c20ad8180a1f_large/mountain-yoga-sunrise-stockcake.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.35);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    padding-left: 80px;
+}
+
+.hero h1 {
+    font-size: 90px;
+    font-family: 'Cormorant Garamond',serif;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 30px;
+    border: none;
+    background: var(--rose);
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Cormorant Garamond',serif;
+    margin-bottom: 25px;
+}
+
+.about {
+    text-align: center;
+    background: var(--sand);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        padding: 15px;
+    }
+
+    .card p {
+        padding: 0 15px 20px;
+    }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 15px;
+}
+
+    .gallery img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+.contact {
+    background: var(--sand);
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: var(--sage);
+    color: white;
+    padding: 12px;
+    border: none;
+}
+
+footer {
+    background: var(--earth);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.ai-section {
+    background: #FAF7F2;
+    text-align: center;
+}
+
+.assistant-box {
+    max-width: 700px;
+    margin: auto;
+}
+
+    .assistant-box textarea {
+        width: 100%;
+        height: 120px;
+        padding: 15px;
+        margin: 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .assistant-box button {
+        padding: 12px 25px;
+        border: none;
+        background: #7C9A6E;
+        color: white;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
